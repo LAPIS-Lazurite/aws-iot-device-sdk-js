@@ -405,6 +405,9 @@ function DeviceClient(options) {
    if (!isUndefined(options.offlineQueueDropBehavior)) {
       offlineQueueDropBehavior = options.offlineQueueDropBehavior;
    }
+   if (!isUndefined(options.offlinePublishQueue)) {
+      offlinePublishQueue = options.offlinePublishQueue;
+   }
    currentReconnectTimeMs = baseReconnectTimeMs;
    options.reconnectPeriod = currentReconnectTimeMs;
    options.fastDisconnectDetection = true;
